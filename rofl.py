@@ -131,6 +131,7 @@ while True:
     time.sleep(2)
     os.startfile(resource_path("assets/pearl.jpg"))
     os.startfile(resource_path("assets/eat.png"))
+    print("Может тебя ещё покормить? Дурак!!")
     input("Нажми Enter чтобы вернуться обратно! Хмпф!") 
     clear_console()
    
@@ -156,6 +157,28 @@ while True:
      input("Нажми Enter чтобы вернуться обратно! Хмпф!")
      clear_console()
 
+   elif user_sub == "Привет":
+      clear_console()
+      print("П-привет... Дурак! Не думай что я с тобой вежлива, но... Спрашивай уже давай что нибудь! ")
+      time.sleep(3) 
+      input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+      clear_console()
+
+   elif user_sub == "Как тебя зовут?":
+     clear_console()
+     print("Меня зовут Нацуки, и я твоя помощница, спрашивай уже что нибудь!")
+     time.sleep(2)
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+     clear_console()
+
+   elif user_sub == "А почему ты в командной строке?": 
+     clear_console()
+     print("Потому что мой создатель ленивый тюлень! Он на меня почти не обращает внимания, хмпф! Идиот! За то обещает скоро сделать граффический интерфейс...") 
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+     clear_console()
+
+     
+
 
    else:
      clear_console()
@@ -163,6 +186,8 @@ while True:
      time.sleep(2)
      input("Нажми Enter чтобы вернуться обратно! Хмпф!")  
      clear_console()
+
+     
 
 
 
