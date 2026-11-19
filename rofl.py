@@ -18,9 +18,17 @@ def clear_console():
     command = "cls"
     subprocess.run(command, shell=True)    
 
+def restart_pc():
+    command1 = "shutdown -r -t 2"
+    subprocess.run(command1, shell=True)   
+
+def shutdown_pc():
+    command2 = "shutdown -s -t 2"
+    subprocess.run(command2, shell=True)
 
 
-input("Добро пожаловать в ваш цундере помощник, а если точнее, то цундере будет Нацуки. Удачи!    ver.1.6 ")
+
+input("Добро пожаловать в Tsundere Helper! В роли цундере будет Нацуки. Удачи! ver.2.0. ")
 clear_console()
 print("Дурак, и зачем ты сюда зашёл??")
 while True:
@@ -131,8 +139,23 @@ while True:
     time.sleep(2)
     os.startfile(resource_path("assets/pearl.jpg"))
     os.startfile(resource_path("assets/eat.png"))
-    input("Нажми Enter чтобы вернуться обратно! Хмпф!") 
     clear_console()
+    print("Может тебя еще покормить с ручек? Хмпф!")
+    user_sub1 = input("Ввод(Да/Нет): ")
+    if user_sub1 == "Да":
+      clear_console()
+      print("Дурак!! Реально идиот! *краснеет* Открой ротик... Не заставляй меня ждать!")
+      time.sleep(2)
+      os.startfile(resource_path("assets/video.mp4"))
+      input("Нажми Enter чтобы вернуться обратно! Хмпф!") 
+      clear_console()
+    
+    else:
+      clear_console()
+      print("Ну как хочешь! Не очень-то и хотелось...")
+      time.sleep(2)
+      input("Нажми Enter чтобы вернуться обратно! Хмпф!") 
+      clear_console()
    
 
    elif user_sub == "Покажи себя":
@@ -156,6 +179,62 @@ while True:
      input("Нажми Enter чтобы вернуться обратно! Хмпф!")
      clear_console()
 
+   elif user_sub == "Привет":
+      clear_console()
+      print("П-привет... Дурак! Не думай что я с тобой вежлива, но... Спрашивай уже давай что нибудь! ")
+      time.sleep(3) 
+      input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+      clear_console()
+
+   elif user_sub == "Как тебя зовут?":
+     clear_console()
+     print("Меня зовут Нацуки, и я твоя помощница! Cпрашивай уже что нибудь!")
+     time.sleep(2)
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+     clear_console()
+
+   elif user_sub == "А почему ты в командной строке?": 
+     clear_console()
+     print("Потому что мой создатель ленивый тюлень! Он на меня почти не обращает внимания, хмпф! Идиот! За то обещает скоро сделать граффический интерфейс...") 
+     time.sleep(3)
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+     clear_console()
+
+   elif user_sub == "Открой доту":
+     clear_console()
+     print("Хмпф! Эта глупая игра для инцелов? Дурак! Нет чтобы поиграть во что-то например со мной... Уффф! Забудь!")
+     time.sleep(3)
+     os.startfile(resource_path("assets/dota.bat"))
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!")
+     clear_console()
+
+   elif user_sub == "Перезагрузи компьютер":
+     clear_console()
+     print("Н-ну ладно! Так и быть... Дурак! Скажи спасибо...")
+     time.sleep(2)
+     restart_pc()
+
+   elif user_sub == "Выключи компьютер":
+     clear_console()
+     print("Правильно! Иди отдохни от глупых игрушек, иии... Книжку почитай например!")
+     time.sleep(3)
+     shutdown_pc()
+
+   elif user_sub == "Включи музыку":
+     clear_console()
+     print("Хмпф! Если не понравится мой вкус, уходи прочь!") 
+     time.sleep(2)
+     os.startfile(resource_path("assets/music.mp3"))
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!") 
+     clear_console() 
+
+   elif user_sub == "Как у тебя дела?":
+     clear_console()
+     print("А чего это ты интересуешься?? Ну... Всё как обычно... *краснеет* Дурак...")
+     time.sleep(2)
+     input("Нажми Enter чтобы вернуться обратно! Хмпф!")   
+     clear_console()
+
 
    else:
      clear_console()
@@ -163,6 +242,8 @@ while True:
      time.sleep(2)
      input("Нажми Enter чтобы вернуться обратно! Хмпф!")  
      clear_console()
+
+     
 
 
 
